@@ -27,3 +27,7 @@ export type Config = Omit<Linter.Config, 'plugins' | 'rules'> & {
    */
   rules?: Rules
 }
+
+export interface OptionsOverrides {
+  overrides?: Config['rules']
+}

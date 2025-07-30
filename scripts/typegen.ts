@@ -3,7 +3,7 @@ import fs from 'node:fs/promises'
 import { flatConfigsToRulesDTS } from 'eslint-typegen/core'
 import { builtinRules } from 'eslint/use-at-your-own-risk'
 
-import { combine } from '../src'
+import { combine, javascript } from '../src'
 
 const configs = await combine(
   {
@@ -13,6 +13,7 @@ const configs = await combine(
       },
     },
   },
+  javascript(),
 )
 
 const configNames = configs.map(i => i.name).filter(Boolean) as string[]

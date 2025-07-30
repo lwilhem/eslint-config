@@ -27,6 +27,9 @@
   },
   "dependencies": {
     "eslint-flat-config-utils": "catalog:lint",
+    "eslint-plugin-antfu": "catalog:plugins",
+    "eslint-plugin-sxzz": "catalog:plugins",
+    "eslint-plugin-unused-imports": "catalog:plugins",
     "globals": "catalog:dev",
     "local-pkg": "catalog:dev"
   },
