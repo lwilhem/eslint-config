@@ -1,0 +1,42 @@
+{
+  "name": "@lwilhem/eslint-config",
+  "type": "module",
+  "version": "1.0.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "packageManager": "pnpm@10.13.1",
+  "license": "MIT",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "gen": "tsx scripts/typegen.ts",
+    "lint": "eslint . --fix",
+    "check": "tsc --noEmit",
+    "build": "nr gen && tsdown --clean --dts",
+    "prepack": "nr build"
+  },
+  "dependencies": {
+    "eslint-flat-config-utils": "catalog:lint",
+    "globals": "catalog:dev",
+    "local-pkg": "catalog:dev"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "catalog:lint",
+    "@types/node": "catalog:dev",
+    "eslint": "catalog:lint",
+    "eslint-typegen": "catalog:lint",
+    "tsdown": "catalog:dev",
+    "tsx": "catalog:dev",
+    "typescript": "catalog:dev"
+  }
+}

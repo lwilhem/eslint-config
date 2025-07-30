@@ -1,0 +1,36 @@
+# depedencies
+jspm_packages
+node_modules
+
+# build outputs
+.eslint-config-inspector
+src/typegen.d.ts
+.vercel
+dist
+
+# logs
+*.log*
+logs
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# test coverage
+nyc_output
+_fixtures
+coverage
+
+# OS
+.DS_Store
+Thumbs.db
+.history
+.temp
+
+# IDEs and editors
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+.idea
