@@ -26,6 +26,9 @@
     "prepack": "nr build"
   },
   "dependencies": {
+    "@eslint/js": "catalog:dev",
+    "@typescript-eslint/eslint-plugin": "catalog:plugins",
+    "@typescript-eslint/parser": "catalog:parsers",
     "eslint-flat-config-utils": "catalog:lint",
     "eslint-plugin-antfu": "catalog:plugins",
     "eslint-plugin-sxzz": "catalog:plugins",
