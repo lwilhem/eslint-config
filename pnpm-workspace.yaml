@@ -3,25 +3,25 @@ packages: []
 catalogs:
   dev:
     '@antfu/ni': ^25.0.0
-    '@eslint/js': ^9.32.0
-    '@types/node': 24.2.0
+    '@eslint/js': ^9.33.0
+    '@types/node': 24.3.0
     globals: ^16.3.0
-    local-pkg: ^1.1.1
-    tsdown: ^0.13.3
-    tsx: ^4.20.3
+    local-pkg: ^1.1.2
+    tsdown: ^0.14.1
+    tsx: ^4.20.4
     typescript: 5.9.2
   lint:
-    '@antfu/eslint-config': 5.1.0
-    eslint: 9.32.0
+    '@antfu/eslint-config': 5.2.1
+    eslint: 9.33.0
     eslint-flat-config-utils: ^2.1.1
     eslint-typegen: ^2.3.0
   parsers:
-    '@typescript-eslint/parser': ^8.39.0
+    '@typescript-eslint/parser': ^8.40.0
   plugins:
-    '@typescript-eslint/eslint-plugin': ^8.39.0
+    '@typescript-eslint/eslint-plugin': ^8.40.0
     eslint-plugin-antfu: ^3.1.1
-    eslint-plugin-sxzz: ^0.4.0
-    eslint-plugin-unused-imports: ^4.1.4
+    eslint-plugin-sxzz: ^0.4.1
+    eslint-plugin-unused-imports: ^4.2.0
 
 onlyBuiltDependencies:
   - esbuild

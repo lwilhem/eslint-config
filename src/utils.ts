@@ -14,8 +14,6 @@ export const isTypescriptPresent = (): boolean => isPackageExists('typescript')
 export function isVuePresent(): boolean {
   return isPackageExists('vue')
     || isPackageExists('nuxt')
-    || isPackageExists('vitepress')
-    || isPackageExists('@slidev/cli')
 }
 
 /**
@@ -23,8 +21,11 @@ export function isVuePresent(): boolean {
  */
 export function isReactPresent(): boolean {
   return isPackageExists('react')
-    || isPackageExists('next')
     || isPackageExists('react-dom')
+}
+
+export function isNextJSPresent(): boolean {
+  return isPackageExists('next')
 }
 
 /**
